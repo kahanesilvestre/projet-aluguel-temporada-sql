@@ -1,0 +1,4 @@
+update propriedades set Preco_Noite = Preco_Noite * 1.1 where nome_imovel = 'casa de campo';
+
+delete from hospedes where id = 2;
+

@@ -1,0 +1,20 @@
+alter table propriedades add column preco_noite numeric (10, 2) not null check (preco_noite > 0);
+
+
+insert into hospedes (nome, email, telefone)
+values ('alberto', 'alberto@gmail.com', 24988758495),
+('aurora', 'aurora@gmail.com', 24981256485),
+('bely', 'bely@gmail.com', 24985849562);
+
+
+INSERT INTO enderecos (cidade, estado) 
+values ('petropolis', 'rj'),
+('rio de janeiro', 'rj'),
+('sao paulo', 'sp');
+
+
+
+INSERT INTO propriedades (nome_imovel, capacidade_hospedes, fk_endereco, Preco_Noite) 
+values ('copacabana',8, 1, 500),
+('plaza hotel', 4,2, 845),
+('casa de campo', 1,1, 960);
